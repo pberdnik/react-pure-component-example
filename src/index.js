@@ -10,12 +10,7 @@ import store from './store'
 
 ReactDOM.render(
   <div className="container">
-    <App />
     <PureApp />
   </div>,
   document.getElementById('view'),
 )
-
-setInterval(() => {
-  store.dispatch({ type: 'produce' })
-}, 2000)

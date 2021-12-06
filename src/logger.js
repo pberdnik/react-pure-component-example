@@ -1,8 +1,5 @@
-const $produce = document.getElementById('produceConsole')
 
 const counter = {}
-
-const newMessage = (...args) => `<p class="msg">${args.join(' ')}</p>`
 
 const countComponentByName = (name) => {
   let entity = counter[name]
@@ -19,7 +16,6 @@ const countComponentByName = (name) => {
 }
 
 export const appendToProduce = (...args) => {
-  $produce.innerHTML = newMessage(...args) + $produce.innerHTML
 }
 
 export const countComponent = (name, isPure) => {
